@@ -47,13 +47,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="aboutdialog.cpp">
+    <ClCompile Include="src\aboutdialog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mainwindow.cpp">
+    <ClCompile Include="src\mainwindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="qextserial\qextserialport.cpp">
@@ -64,10 +64,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="aboutdialog.h">
+    <QtMoc Include="include\aboutdialog.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="mainwindow.h">
+    <QtMoc Include="include\mainwindow.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="qextserial\qextserialport.h">
@@ -76,78 +76,85 @@
     <ClInclude Include="qextserial\qextserialport_global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\ui_aboutdialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    
+    
+    
+    
     <CustomBuild Include="debug\moc_predefs.h.cbt">
       <Filter>Generated Files</Filter>
     </CustomBuild>
     <CustomBuild Include="release\moc_predefs.h.cbt">
       <Filter>Generated Files</Filter>
     </CustomBuild>
+    
+    
+    
+    
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="aboutdialog.ui">
+    <QtUic Include="ui\aboutdialog.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="mainwindow.ui">
+    <QtUic Include="ui\mainwindow.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
   <ItemGroup>
-    <None Include="images\add.png">
+    <None Include="resources\images\add.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="images\cleanport.png">
+    <None Include="resources\images\cleanport.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="images\clearbytes.png">
+    <None Include="resources\images\clearbytes.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="images\edit-clear.png">
+    <None Include="resources\images\edit-clear.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="images\exit.png">
+    <None Include="resources\images\exit.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="images\header.bmp">
-      <Filter>Resource Files</Filter>
-    </None>
-    <QtRcc Include="images.qrc">
+    <QtRcc Include="resources\images.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
-    <None Include="images\lcd.bmp">
+    <None Include="resources\images\loadfile.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="images\loadfile.png">
+    <None Include="resources\images\logo129-66.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="images\logo129-66.png">
+    <None Include="resources\images\logo42-22.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="images\logo42-22.png">
+    <None Include="resources\images\mesage.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="images\mesage.png">
+    <None Include="resources\images\open.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="images\open.png">
+    <None Include="resources\images\save.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="images\save.png">
+    <None Include="resources\images\send.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="images\send.png">
+    <None Include="resources\images\stop.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="images\stop.png">
+    <None Include="resources\images\write2file.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="images\write2file.png">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="myico.rc" />
+    <ResourceCompile Include="resources\myico.rc" />
   </ItemGroup>
 </Project>

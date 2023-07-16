@@ -12,16 +12,20 @@ QT       += core gui
 TARGET = qcom
 TEMPLATE = app
 
+INCLUDEPATH += \
+    include
 
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    aboutdialog.cpp \
-        qextserial/qextserialport.cpp
+SOURCES += qextserial/qextserialport.cpp \
+    src/aboutdialog.cpp \
+    src/main.cpp \
+    src/mainwindow.cpp
 
-HEADERS  += mainwindow.h \
-    aboutdialog.h \
-        qextserial/qextserialport_global.h \
-        qextserial/qextserialport.h
+HEADERS += include/aboutdialog.h \
+    include/mainwindow.h \
+    include/ui_aboutdialog.h \
+    include/ui_mainwindow.h \
+    qextserial/qextserialport_global.h \
+    qextserial/qextserialport.h
 
 win32 {
      SOURCES += qextserial/qextserialport_win.cpp
@@ -31,12 +35,13 @@ unix {
      SOURCES += qextserial/qextserialport_unix.cpp
 }
 
-FORMS    += mainwindow.ui \
-    aboutdialog.ui
+FORMS += ui/mainwindow.ui \
+    ui/aboutdialog.ui
 
 RESOURCES += \
-    images.qrc
-RC_FILE += myico.rc
+    resources/images.qrc
+
+RC_FILE += resources/myico.rc
 
 OTHER_FILES += \
-    myico.rc
+    resources/myico.rc
