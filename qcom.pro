@@ -4,6 +4,7 @@
 #
 #-------------------------------------------------
 #if QT_VERSION >= 0x050000
+
 QT       += core gui widgets
 #else
 QT       += core gui
@@ -12,8 +13,7 @@ QT       += core gui
 TARGET = qcom
 TEMPLATE = app
 
-INCLUDEPATH += \
-    include
+INCLUDEPATH += include
 
 SOURCES += qextserial/qextserialport.cpp \
     src/aboutdialog.cpp \
@@ -26,6 +26,8 @@ HEADERS += include/aboutdialog.h \
     include/ui_mainwindow.h \
     qextserial/qextserialport_global.h \
     qextserial/qextserialport.h
+
+UI_DIR += include
 
 win32 {
      SOURCES += qextserial/qextserialport_win.cpp
